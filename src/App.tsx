@@ -1,9 +1,4 @@
-import {
-  useEffect,
-  // useEffect, useMemo,
-  useState,
-  type FormEventHandler,
-} from "react";
+import { useEffect, useState } from "react";
 
 import type {
   Product as ProductType,
@@ -85,7 +80,7 @@ function App() {
     };
 
     fetch("https://jgaldamez.app.n8n.cloud/webhook/luxyclip/new-product", {
-    // fetch("https://jgaldamez.app.n8n.cloud/webhook-test/luxyclip/new-product", {
+      // fetch("https://jgaldamez.app.n8n.cloud/webhook-test/luxyclip/new-product", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
